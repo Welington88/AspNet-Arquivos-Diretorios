@@ -34,6 +34,10 @@ namespace ArquivosAspNet
             Watcher watcher = new Watcher();
             watcher.monitorar(Environment.CurrentDirectory);
 
+            Import import = new Import();
+            import.importarCSV();
+            import.exportCSV();
+
             Console.ReadKey();
         }
     }
