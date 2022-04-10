@@ -36,7 +36,7 @@ namespace ArquivosAspNet
 
             Import import = new Import();
             import.importarCSV();
-            import.exportCSV();
+            //import.exportCSV(); //tirar comentario para exportar
 
             Console.ReadKey();
         }
