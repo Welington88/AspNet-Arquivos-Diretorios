@@ -1,4 +1,0 @@
-Arquivo criado pelo C# - aspNet
-População: 220 milhões
-IDH: 0.701
-Dados: 09/04/2022 19:09:27

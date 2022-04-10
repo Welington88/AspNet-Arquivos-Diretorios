@@ -16,7 +16,7 @@ namespace ArquivosAspNet
             var nome = Console.ReadLine();*/
             
             Arquivo arquivo = new Arquivo();
-            String nomeArquivo = "Uruguai.txt";
+            String nomeArquivo = "Brasil.txt";
             //retirar o .txt
             String nome = nomeArquivo.Substring(0, nomeArquivo.IndexOf("."));
             Console.WriteLine(arquivo.criarArquivo(nome));
@@ -30,6 +30,10 @@ namespace ArquivosAspNet
             //diretorio.listarDiretorio(buscar);
             diretorio.listarArquivos(buscar);
             Console.WriteLine("Digite enter para finalizar!!!");
+
+            Watcher watcher = new Watcher();
+            watcher.monitorar(Environment.CurrentDirectory);
+
             Console.ReadKey();
         }
     }
